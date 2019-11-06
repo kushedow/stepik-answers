@@ -7,13 +7,24 @@
             <p>Введите номер степа, чтобы посмотреть подсказку, ответ, решение или видеоразбор</p>
 
             <form action="solution" method="get" class="form-row">
-                <div class="col-xs-6 col-md-3">
-                    <input type="text" name="stepid" class="form-control" />
+
+                <div class="col-3 col-md-2">
+                    <input type="text" name="lessonid" class="form-control" placeholder="Урок" required/>
                 </div>
-                <div class="col-xs-6 col=md-2">
+                <div class="col-3 col-md-2">
+                    <input type="text" name="stepid" class="form-control" placeholder="Шаг"  required/>
+                </div>
+                <div class="col-6 col-md-2">
                     <input type="submit"  class="form-control btn btn-primary"  value="Найти ответ" />
                 </div>
+
             </form>
+
+            <div class="mt-4">
+                <p class="text-secondary">Номер урока можно посмотреть в адресной строке – это первая цифра, например 266210</p>
+                <p class="text-secondary">Номер шага – это порядковый номер квадратика в верхней полосе, например 8 </p>
+                <p class="text-secondary">Показать <a href="/solution?lessonid=266210&stepid=8">пример</a></p>
+            </div>
 
         </div>
     </div>
