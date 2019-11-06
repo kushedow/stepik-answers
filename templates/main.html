@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block container %}
 
-</body>
-</html>
+    <div class="mt-4">
+        <div class="card-body">
+            <h1>Stepic Assistant</h1>
+            <p>Введите номер степа, чтобы посмотреть подсказку, ответ, решение или видеоразбор</p>
+
+            <form action="solution" method="get" class="form-row">
+                <div class="col-2">
+                    <input type="text" name="stepid" class="form-control" />
+                </div>
+                <div class="col=2">
+                    <input type="submit"  class="form-control btn btn-primary"  value="Найти ответ" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}
